@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2%;
+    h1{
+        padding-top: 10%;
+        font-size: 30px;
+    }
+    &_left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &_right{
+        width: 50%;
+    }
+    .input{
+        width: 80%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        background: rgb(255,255,255);
+background: radial-gradient(circle, rgb(226, 122, 179) 10%, rgb(169, 62, 103) 90%);
+align-items: center;
+.name{
+    margin-top: 5%;
+}
+input{
+    height: 50px;
+    width: 80%;
+    border: none;
+    border-radius: 2%;
+    font-size: 20px;
+    padding-left: 2%;
+}
+textarea{
+    width: 80%;
+    font-size: 20px;
+    height: 100px;
+    padding-left: 1%;
+}
+button{
+    width: 30%;
+    height: 9%;
+    border-radius: 3%;
+    font-size: 20px;
+}
+    }
+   
+}
+.contact_right{
+    width: 50%;
+    img{
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 390px) {
+.contact{
+    width: 100%;
+    flex-direction: column;
+    &_left{
+width: 100%;
+h1{
+    font-size: 20px;
+}
+    }
+    &_right{
+        width: 100%;
+    }
+}
+
+}
+@media (max-width: 600px) {
+    .contact{
+        width: 100%;
+        flex-direction: column;
+        &_left{
+    width: 100%;
+    h1{
+        font-size: 20px;
+    }
+        }
+        &_right{
+            width: 100%;
+        }
+    }
+    
+    }
+    @media (max-width: 900px) {
+        .contact{
+            width: 100%;
+            
+            &_left{
+        width: 100%;
+        h1{
+            font-size: 25px;
+        }
+            }
+            &_right{
+                width: 100%;
+                padding-top: 10%;
+            }
+        }
+        
+        }

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+
+}
+
+.about_one {
+    width: 100%;
+    margin-top: 0;
+    text-align: center !important;
+    background-image: url(https://tartecosmetics.com/on/demandware.static/-/Library-Sites-TarteSharedLibrary/default/dw001240e3/images/2021/landing-page/about-tarte/01_about-tarte-lp_header_banner_m.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    .at {
+        padding-top: 10%;
+    }
+
+    p {
+        font-size: 2.2rem !important;
+        font-weight: 400;
+        line-height: 1;
+        color: rgb(65, 20, 108);
+    }
+}
+
+.about_two {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(237, 232, 241);
+    margin-top: -20px !important;
+    box-sizing: border-box;
+
+    .w {
+        line-height: 0.9;
+    }
+
+    .w_one {
+        padding-top: 5%;
+    }
+
+    ul {
+        text-align: start;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .w_two {
+        padding-left: 7%;
+        padding-right: 7%;
+        line-height: 1;
+        font-size: 1.2rem;
+    }
+}
+
+.about_three {
+    width: 100%;
+    display: flex;
+
+    h1 {
+        padding-top: 5%;
+        font-size: 2.3rem;
+    }
+
+    p {
+        display: inline-block;
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .about-left {
+        width: 30%;
+
+        background-image: url(https://tartecosmetics.com/on/demandware.static/-/Library-Sites-TarteSharedLibrary/default/dw25dfacf7/images/2021/landing-page/about-tarte/02_about-tarte-lp_founder_bio_06302021.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+
+    }
+
+    .about-right {
+        width: 70%;
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .about_one {
+        width: 100%;
+
+        p {
+            font-size: 20px !important;
+        }
+
+        .at {
+            padding-top: 15%;
+        }
+    }
+
+    .about_two {
+        width: 100%;
+
+        p {
+            font-size: 17px;
+        }
+
+        li {
+            font-size: 14px;
+        }
+    }
+
+    .w_two {
+        font-size: 15px;
+    }
+
+    .about_three {
+        display: flex;
+        text-align: center;
+        flex-direction: column !important;
+
+        .about-left {
+            width: 100% !important;
+            height: 400px;
+
+
+        }
+
+        .about-right {
+            width: 100% !important;
+
+            h1 {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .about_one {
+        width: 100%;
+        p {
+            font-size: 17px;
+        }
+    }
+
+}
+
+@media (max-width: 800px) {}

@@ -1,0 +1,139 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Gotham-Book;
+}
+#app {
+    height: 100%;
+  }
+  .hh2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .hh2 h2{
+    width: 4  0%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .SwiperSlide1{
+ display: flex !important;
+ flex-direction: row;
+ background-color: #ffffff;
+background-image: linear-gradient(160deg, #ffffff 0%, #efedea 100%);
+
+
+  }
+  .swiper_left{
+width: 50%;
+font-family: 'Great Vibes',cursive;height: 500px !important;
+
+
+  }
+  .swiper_left h2{
+    font-size: 70px;
+ padding-top: 9%;
+    line-height: 60px;
+    color: #efaac0;
+  }
+  .swiper_left p{
+padding-top: 3%;
+font-size: larger;
+text-align: center;
+  }
+  .swiper_right{
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .swiper_right img{
+ width: 70%;
+
+  }
+ 
+  @media (max-width: 390px) {
+    
+    
+    .one{
+      padding-top: 20% !important;
+    }
+    .hh2{
+      margin-top: 20%;
+    }
+    h2{
+      font-size: 20px !important;
+    }
+    .chevron{
+      width: 10%;
+    }
+}
+@media (max-width: 600px) {
+
+  .one{
+    padding-top: 20% !important;
+  }
+  .hh2{
+    margin-top: 20%;
+  }
+  h2{
+    font-size: 20px !important;
+  }
+  .chevron{
+    width: 10%;
+  }
+}
+@media (max-width: 800px) {
+
+  .one{
+    padding-top: 20% !important;
+  }
+  .hh2{
+    margin-top: 20%;
+  }
+  h2{
+    font-size: 20px !important;
+  }
+  .chevron{
+    width: 10%;
+  }
+}
+
+

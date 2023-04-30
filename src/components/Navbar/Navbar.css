@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "menimfontum";
+  src: url();
+}
+body {
+  font-family: New Century Schoolbook, sans-serif !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  font-family: Gill Sans Extrabold, sans-serif;
+
+}
+
+nav {
+  font-family: Cochin, Georgia, Times, 'Avanta Garde' ;
+  display: flex;
+  background-color: #fc8eb6;
+  background-image: linear-gradient(62deg, #fc8eb1 0%, #E0C3FC 100%);
+  box-shadow: #E0C3FC;
+  border-bottom: (62deg, #8EC5FC 0%, #f7fcc3 100%) solid 10px;
+  position: fixed;
+  top: auto;
+  z-index: 5;
+  width: 100%;
+  color: rgb(53, 53, 54) !important;
+  padding: 10px;
+}
+
+
+.home {
+  width: 25%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  color: rgb(236, 84, 236) !important;
+  text-decoration: none;
+
+}
+
+#menuToggle {
+  display: none !important;
+}
+.bii{
+color: #232323;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle {
+  display: block;
+  /* position: relative;
+  top: 50px;
+  left: 50px; */
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+  left: 0;
+  top: 0;
+  padding-top: 125px;
+  display: flex;
+  flex-direction: column;
+  background: #e6c0d7dc;
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+.home a {
+  color: black;
+}
+
+.home:hover {
+  color: rgb(205, 27, 122);
+}
+
+.store {
+  width: 60%;
+  font-size: 130px;
+  padding-left: 10%;
+}
+
+.store h1:hover {
+  color: rgb(205, 27, 122);
+}
+
+.icons {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.icons i:hover {
+  color: rgb(205, 27, 122);
+  cursor: pointer;
+}
+
+@media (max-width: 390px) {
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.bi-person-fill,.bi-heart-fill{
+  display: none;
+}
+.bi-cart-dash-fill{
+  text-align: center;
+  padding-left: 30%;
+}
+  .home {
+    width: 0%;
+  }
+
+  .home a {
+    display: none;
+  }
+
+  .store {
+    width: 20%;
+  }
+
+  .icons {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #menuToggle {
+    display: inline-block !important;
+  }
+
+  #menuToggle a {
+    display: inline-block;
+  }
+
+  .home {
+    width: 0%;
+
+  }
+
+  .home a {
+    display: none;
+  }
+
+  .store {
+    width: 20%;
+  }
+
+  .icons {
+    width: 30%;
+  }
+}
+@media (max-width: 900px) {
+  .home{
+    gap: 5%;
+  }
+  .bi-person-fill,.bi-heart-fill{
+    display: none;
+  }
+  .bi-cart-dash-fill{
+    text-align: center;
+    padding-left: 30%;
+  }
+}
